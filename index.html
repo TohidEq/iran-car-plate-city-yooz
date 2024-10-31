@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>پلاک یاب</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="centerize">
+      <div class="container">
+        <form>
+          <div class="form-container">
+            <header class="head">
+              <img
+                src="./images/Iran_private_vehicle_number_plate.svg.png"
+                alt="نمونه پلاک ماشین ایران"
+              />
+              <h2 class="title">پلاک یاب</h2>
+            </header>
+
+            <div class="form-inputs">
+              <input
+                class="input-item form-input"
+                id="txt-input"
+                type="number"
+                pattern="/d"
+                placeholder="00"
+                required
+                min="10"
+                max="99"
+              />
+
+              <button
+                class="input-item log-in svg"
+                onclick="saveInputValue()"
+                id="btn"
+                style="font-family: yekan"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./parse.js"></script>
+  </body>
+</html>

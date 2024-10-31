@@ -1,0 +1,140 @@
+/* Fonts Form Google Font ::- https://fonts.google.com/  -:: */
+@import url("https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur");
+
+@font-face {
+  font-family: yekan;
+  src: url(./font/Yekan.woff);
+}
+
+/* Global rules */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 0;
+  border-color: transparent;
+}
+
+:root {
+  --black: #1a1a19;
+  --dark-green: #31511e;
+  --green: #859f3d;
+  --white: #f6fcdf;
+}
+
+body {
+  font-family: yekan !important;
+  background-color: var(--black);
+}
+
+.centerize {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
+
+.centerize .container {
+  max-width: 600px;
+  width: 100%;
+  min-height: 50vh;
+}
+
+.centerize .container form {
+}
+
+.centerize .container form .form-container {
+  padding: 40px 10px;
+  border-radius: 8px;
+  color: var(--black);
+  background-color: var(--dark-green);
+}
+
+/* head */
+.centerize .container form .form-container .head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.centerize .container form .form-container .head .title {
+  font-weight: bold;
+  font-size: 30px;
+}
+.centerize .container form .form-container .head img {
+  height: 30px;
+  padding-right: 10px;
+}
+
+/* form inputs */
+.centerize .container form .form-container .form-inputs {
+  display: flex;
+  position: relative;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: var(--green);
+  border-radius: 16px;
+  overflow: hidden;
+}
+.centerize .container form .form-container .form-inputs .input-item {
+  -webkit-appearance: none;
+  box-shadow: none !important;
+  font-size: 24px;
+  outline: none;
+  padding: 4px 12px;
+}
+.centerize
+  .container
+  form
+  .form-container
+  .form-inputs
+  .input-item:focus-visible {
+  outline: none;
+}
+
+.centerize .container form .form-container .form-inputs .input-item.form-input {
+  font-family: "Abel", sans-serif;
+  width: 160px;
+  color: var(--black);
+  font-weight: bold;
+}
+
+.centerize
+  .container
+  form
+  .form-container
+  .form-inputs
+  .input-item.form-input::placeholder {
+  color: var(--dark-green);
+  font-weight: bold;
+}
+
+.centerize .container form .form-container .form-inputs .input-item.svg {
+}
+
+.centerize .container form .form-container .form-inputs .input-item.log-in {
+  height: 40px;
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 24px;
+  transition: all;
+  transition-duration: 0.7s;
+}
+.centerize
+  .container
+  form
+  .form-container
+  .form-inputs
+  .input-item.log-in:hover {
+  opacity: 80%;
+}
